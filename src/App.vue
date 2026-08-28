@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Clock from './components/Clock.vue'
-import Quote from './components/Quote.vue'
+import Clock from './components/clock.vue'
+import Quote from './components/quote.vue'
 </script>
 
 <template>
