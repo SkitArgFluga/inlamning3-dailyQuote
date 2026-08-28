@@ -5,63 +5,104 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f5f5f5;
-  color: #222;
+  background: #eef0ff;
+  color: #292b45;
 }
 
 main {
   max-width: 700px;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
 h1 {
   margin-bottom: 40px;
+  font-size: 42px;
+  color: #514b91;
 }
 
 section {
-  background: white;
+  background: #ffffff;
   padding: 30px;
   margin-top: 20px;
-  border-radius: 8px;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px rgba(81, 75, 145, 0.12);
 }
 
 .clock p {
   margin: 5px;
 }
 
+.clock p:first-child {
+  font-size: 20px;
+  color: #66698a;
+}
+
+.clock p:last-child {
+  font-size: 32px;
+  font-weight: bold;
+  color: #514b91;
+}
+
+.quote h2 {
+  margin-top: 0;
+  color: #514b91;
+}
+
 .quote p {
   font-size: 22px;
-  line-height: 1.5;
+  line-height: 1.6;
+  font-style: italic;
+  margin: 25px 0;
+  color: #3d3f5c;
 }
 
 button {
-  background: #4f46e5;
+  background: #6b63b5;
   color: white;
   border: none;
-  padding: 12px 24px;
-  border-radius: 10px;
+  padding: 13px 28px;
+  border-radius: 12px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
+  transition: 0.2s;
 }
 
 button:hover {
-  opacity: 0.8;
+  background: #514b91;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
 }
 
 @media (max-width: 600px) {
   main {
-    padding: 20px 15px;
+    padding: 30px 15px;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
   }
 
   section {
-    padding: 20px;
+    padding: 25px 20px;
+  }
+
+  .clock p:last-child {
+    font-size: 26px;
   }
 
   .quote p {
     font-size: 18px;
+  }
+
+  button {
+    width: 100%;
   }
 }
